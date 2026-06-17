@@ -4,46 +4,15 @@ Source:
 - LeetCode:
 - NeetCode:
 
-## Problem Summary
+## Notes
 
-Write the problem in your own words. Link to the original instead of copying the
-full prompt.
+- [Problem statement and examples](PROBLEM.md)
+- [Solution explanations and complexity analysis](SOLUTIONS.md)
 
-## Visuals
+## C++ Files
 
-Add diagrams or screenshots to `images/` and reference them here:
-
-```md
-![Diagram](images/example.png)
-```
-
-## Examples
-
-```text
-Input:
-Output:
-Explanation:
-```
-
-## Constraints
-
-- Add the important constraints here.
-
-## Optimal Solutions
-
-### Solution 1: Approach Name
-
-- Idea:
-- Time:
-- Space:
-- File: `solutions/solution_approach_name.cpp`
-
-## Supplemental Notes
-
-### Naive Approach
-
-Briefly describe the brute-force solution, why it works, and why it is not the
-preferred implementation.
+- [Solution template](solutions/solution_template.cpp)
+- [Tests](tests/solution_tests.cpp)
 
 ## Test Cases
 

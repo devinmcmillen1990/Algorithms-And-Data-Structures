@@ -9,6 +9,8 @@ slug, for example:
 ```text
 0001-two-sum/
   README.md
+  PROBLEM.md
+  SOLUTIONS.md
   images/
   solutions/
   tests/
@@ -16,13 +18,17 @@ slug, for example:
 
 ## Problem Folder Standard
 
-- `README.md`: problem summary, source links, examples, constraints, approach
-  notes, complexity analysis, and image references when helpful.
+- `README.md`: quick index for the problem folder, links to notes, solutions,
+  source files, and test commands.
+- `PROBLEM.md`: paraphrased problem statement, source links, examples,
+  constraints, edge cases, and image references when helpful.
+- `SOLUTIONS.md`: optimal solution explanations, complexity analysis, worked
+  examples, and a short supplemental note for naive approaches.
 - `images/`: diagrams, hand-drawn notes, screenshots, or other visual aids.
 - `solutions/`: all optimal C++ solutions worth studying for the problem.
 - `tests/`: standalone C++ tests for the solutions.
-- Naive or brute-force ideas belong in a short supplemental note in the problem
-  README unless they are worth compiling for comparison.
+- Avoid copying full prompt text from coding platforms into the repo. Link to
+  the original source and write your own summary.
 
 ## Build and Test
 
