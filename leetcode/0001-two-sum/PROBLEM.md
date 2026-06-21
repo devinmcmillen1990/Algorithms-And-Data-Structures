@@ -58,8 +58,10 @@ Explanation: duplicate values are allowed, but the indices must be different.
 
 ## Visuals
 
-Add diagrams or notes to `images/` as you study. A useful diagram for this
-problem is a table with these columns:
+The official LeetCode problem statement for this problem does not include
+example diagrams. Add your own study diagrams to `_md_images/` if helpful.
+
+A useful diagram for this problem is a table with these columns:
 
 ```text
 index | value | complement needed | values already seen

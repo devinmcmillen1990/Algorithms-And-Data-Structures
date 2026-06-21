@@ -1,7 +1,7 @@
 # Problem Title
 
 Source:
-- LeetCode:
+- LeetCode: https://leetcode.com/problems/problem-slug/
 - NeetCode:
 
 ## Notes
@@ -33,3 +33,6 @@ Run the full regression suite:
 ```powershell
 .\scripts\test.ps1
 ```
+
+Register this problem's test executable in `leetcode/CMakeLists.txt` with
+`add_problem_test(problem-slug target-name)`.

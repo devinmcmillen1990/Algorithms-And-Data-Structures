@@ -1,34 +1,58 @@
 # Algorithms and Data Structures in C++
 
-This repository is organized as a study notebook for LeetCode/NeetCode-style
-problems in C++.
+This repository is a C++ monorepo for algorithm practice, data structure
+exploration, and problem-solving notes.
 
-Each problem lives in its own top-level folder named with the problem number and
-slug, for example:
+## Repository Layout
 
 ```text
-0001-two-sum/
+.
+  leetcode/
+    0001-two-sum/
+    2196-create-binary-tree-from-descriptions/
+    3614-process-string-with-special-operations-ii/
+    _template/
+  data-structures/
+  geeksforgeeks/
+  scripts/
+  CMakeLists.txt
+```
+
+## Tracks
+
+- [LeetCode](leetcode/README.md): LeetCode problem notes, C++ solutions, and
+  tests.
+- [Data Structures](data-structures/README.md): C++ implementations and
+  experiments with core data structures.
+- [GeeksforGeeks](geeksforgeeks/README.md): practice problems from
+  GeeksforGeeks.
+
+## Problem Folder Standard
+
+Problem-based tracks should use this shape:
+
+```text
+problem-slug/
   README.md
   PROBLEM.md
   SOLUTIONS.md
-  images/
+  _md_images/
   solutions/
   tests/
 ```
 
-## Problem Folder Standard
-
-- `README.md`: quick index for the problem folder, links to notes, solutions,
-  source files, and test commands.
+- `README.md`: quick index for the problem folder, links to notes, source
+  files, and test commands.
 - `PROBLEM.md`: paraphrased problem statement, source links, examples,
-  constraints, edge cases, and image references when helpful.
-- `SOLUTIONS.md`: optimal solution explanations, complexity analysis, worked
-  examples, and a short supplemental note for naive approaches.
-- `images/`: diagrams, hand-drawn notes, screenshots, or other visual aids.
-- `solutions/`: all optimal C++ solutions worth studying for the problem.
-- `tests/`: standalone C++ tests for the solutions.
-- Avoid copying full prompt text from coding platforms into the repo. Link to
-  the original source and write your own summary.
+  constraints, edge cases, and markdown image references when helpful.
+- `SOLUTIONS.md`: solution explanations, complexity analysis, worked examples,
+  and supplemental notes.
+- `_md_images/`: diagrams or screenshots used by markdown notes.
+- `solutions/`: C++ implementations.
+- `tests/`: standalone C++ tests.
+
+Avoid copying full prompt text from coding platforms into the repo. Link to the
+original source and write your own summary.
 
 ## Build and Test
 
@@ -84,24 +108,18 @@ When using the Visual Studio generator, `ctest --test-dir build` needs either
 `-C Debug` or a test preset. Without a configuration, CTest cannot choose between
 `Debug`, `Release`, `RelWithDebInfo`, and `MinSizeRel`.
 
-### CI Pipeline
+## CI Pipeline
 
 The GitHub Actions workflow in `.github/workflows/cpp-tests.yml` builds the
 project and runs the full test suite on every push and pull request.
 
-## Current Problems
+## Adding New Work
 
-| Problem | Pattern | Solutions |
-| --- | --- | --- |
-| [0001 Two Sum](0001-two-sum/README.md) | Hash map | One-pass hash map, two-pass hash map |
+For LeetCode, copy `leetcode/_template/problem-slug` into `leetcode/` and
+register tests in `leetcode/CMakeLists.txt`.
 
-## Adding a New Problem
+For data structures, add implementation and test folders under
+`data-structures/`, then register targets in `data-structures/CMakeLists.txt`.
 
-1. Copy `_template/problem-slug` to a new top-level folder such as
-   `0121-best-time-to-buy-and-sell-stock`.
-2. Fill in the README with a concise problem summary and links to the original
-   source.
-3. Add every optimal solution variant that teaches a distinct idea.
-4. Add focused tests for normal cases, edge cases, and constraints.
-5. Register the test executable in the root `CMakeLists.txt` with
-   `add_problem_test(problem-slug target-name)`.
+For GeeksforGeeks, add problem folders under `geeksforgeeks/`, then register
+targets in `geeksforgeeks/CMakeLists.txt`.

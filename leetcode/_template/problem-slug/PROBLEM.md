@@ -1,7 +1,7 @@
 # Problem Title: Problem
 
 Source:
-- LeetCode:
+- LeetCode: https://leetcode.com/problems/problem-slug/
 - NeetCode:
 
 This file should use a paraphrased problem statement instead of copying the full
@@ -31,8 +31,8 @@ Explanation:
 
 ## Visuals
 
-Add diagrams or screenshots to `images/` and reference them here:
+Add diagrams or screenshots to `_md_images/` and reference them here. If the
+LeetCode problem includes official example images, store local copies here and
+link them from this section.
 
-```md
-![Diagram](images/example.png)
-```
+Example image path after you add one: `_md_images/example.png`.

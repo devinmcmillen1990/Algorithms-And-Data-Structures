@@ -13,12 +13,6 @@ function(add_problem_test problem_slug test_target)
     set_tests_properties(${problem_slug} PROPERTIES LABELS ${problem_slug})
 endfunction()
 
-add_executable(two_sum_tests
-    0001-two-sum/tests/two_sum_tests.cpp
-)
-
-target_include_directories(two_sum_tests PRIVATE
-    0001-two-sum/solutions
-)
-
-add_problem_test(0001-two-sum two_sum_tests)
+add_subdirectory(leetcode)
+add_subdirectory(data-structures)
+add_subdirectory(geeksforgeeks)
