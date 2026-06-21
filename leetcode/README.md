@@ -30,6 +30,7 @@ Each problem lives in a folder named with the LeetCode problem number and slug:
 | Problem | Pattern | Solutions |
 | --- | --- | --- |
 | [0001 Two Sum](0001-two-sum/README.md) | Hash map | One-pass hash map, two-pass hash map |
+| [1833 Maximum Ice Cream Bars](1833-maximum-ice-cream-bars/README.md) | Greedy, sorting | In progress |
 | [2196 Create Binary Tree From Descriptions](2196-create-binary-tree-from-descriptions/README.md) | Hash map, binary tree | In progress |
 | [3614 Process String with Special Operations II](3614-process-string-with-special-operations-ii/README.md) | String, simulation | In progress |
 
